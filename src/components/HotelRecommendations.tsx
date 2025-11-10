@@ -37,7 +37,9 @@ export function HotelRecommendations({
 
       try {
         // ✅ Backend call
-        const res = await axios.get("http://localhost:5000/api/hotels", {
+        // const res = await axios.get("http://localhost:5000/api/hotels", {
+          const res = await axios.get("https://saarthi-backend-3i0g.onrender.com/api/hotels", {
+
           params: {
             hotel_id: "191605", // static for now; can be made dynamic later
             adults: 2,

@@ -77,7 +77,9 @@ export function ItineraryPlanner({ destination, days }: ItineraryPlannerProps) {
     setError(null);
     try {
       // ✅ Matches backend route /api/itinerary
-      const res = await axios.post("http://localhost:5000/api/itinerary", {
+      // const res = await axios.post("http://localhost:5000/api/itinerary", {
+        const res = await axios.post("https://saarthi-backend-3i0g.onrender.com/api/itinerary", {
+
         destination,
         days,
       });
